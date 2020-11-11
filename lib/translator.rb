@@ -30,7 +30,7 @@ def get_english_meaning(loaded_file, emoticon)
   emoticons.each do |key, value|
     if value[:japanese] == emoticon
       binding.pry
-      return value[:english]
+      return key
     end
   end
     return "Sorry, that emoticon was not found"
